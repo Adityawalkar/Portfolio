@@ -104,14 +104,11 @@ function StatCard({ icon, label, value, sub }) {
 }
 
 // ---------- resilient photo loader ----------
+const B = import.meta.env.BASE_URL; // '/Portfolio/' in production
 const PROFILE_PIC_CANDIDATES = [
-  "/profile.png",
-  "/profile.jpg",
-  "/linked-in%20photo.png",
-  "/linked-in photo.png",
-  "/linked-in-photo.png",
-  "/linked_in_photo.png",
+  `${B}linked_in_photo.png`
 ];
+
 const PLACEHOLDER_DATA_URL =
   "data:image/svg+xml;utf8," +
   encodeURIComponent(`
@@ -150,8 +147,8 @@ const DATA = {
   addressLine: "Mountain View, CA, USA",
   links: {
     linkedin: "https://www.linkedin.com/in/aditya-walkar-164118299/",
-    github: "https://github.com/your-username", // TODO: replace
-    resume: "/Aditya-Walkar-Resume.pdf",
+    github: "https://github.com/Adityawalkar", // TODO: replace
+    resume: `${B}Aditya-Walkar-Resume.pdf`,
   },
   about:
     "Data professional with 3+ years across software engineering, analytics, and ML. I build predictive models, automate pipelines, and deliver measurable product impact (engagement, retention, and operational efficiency). Passionate about production-grade ML, cloud, and decision intelligence.",
