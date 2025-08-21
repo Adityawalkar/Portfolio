@@ -591,7 +591,6 @@ export default function Portfolio() {
             <a href={DATA.links.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-50 dark:hover:bg-neutral-800"><Github className="h-4 w-4" /> GitHub</a>
             <a href={DATA.links.resume} className={cx("inline-flex items-center gap-2 rounded-full px-4 py-2 text-white hover:opacity-90", accent.btn)}><Download className="h-4 w-4" /> Download Resume</a>
           </div>
-          <p className="mt-8 text-center text-xs text-neutral-500 dark:text-neutral-500">Inspired by Rahul Padwani’s layout; rebuilt in React + Tailwind with recruiter‑friendly UI.</p>
         </Container>
       </section>
 
